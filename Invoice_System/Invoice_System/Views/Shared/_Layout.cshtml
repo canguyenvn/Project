@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice System - @ViewBag.title</title>
+    <link href="~/Content/Asset/Style/style.css" rel="stylesheet" />
+    <script src="~/Content/Asset/Js/bootstrap.min.js"></script>
+    <script src="~/Content/Asset/Js/jquery-3.3.1.min.js"></script>
+    <script src="~/Content/Asset/Js/main.js"></script>
+    <script src="~/Content/Asset/Js/owl.carousel.min.js"></script>
+    <script src="~/Content/Asset/Js/popper.min.js"></script>
+
+
+</head>
+<body>
+    <div id="wrapper">
+        <header class="head">
+            <div class="web_title">
+                <h1 class="logo"><span class="f_logo">INVOICE</span> SYSTEM</h1>
+            </div> <!--End .web_title-->
+
+            <div class="login_info">
+                <span class="timer">2021.01.01.14.01</span>
+                <span class="comp_info">WAAZWIZ, Ltd., Digital department Sales division</span>
+                <span class="u_info"> John Smith</span>
+            </div> <!--End .login_info-->
+
+            <ul class="nav_config">
+                <li>@Html.ActionLink("Configuration", "Index", "Configuration")</li>
+                <li>@Html.ActionLink("Member", "Index", "Member")</li>
+                <li>@Html.ActionLink("Logout", "Index", "Logout")</li>
+            </ul> <!--End ul#nav_config-->
+
+
+            <nav class="top_nav">
+                <ul class="nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Invoice", "Index", "Invoice")</li>
+                    <li>@Html.ActionLink("Delivery Slip", "Index", "DeliveryManagement")</li>
+                    <li>@Html.ActionLink("Purchase Order", "Index", "PurchaseOrder")</li>
+                    <li>@Html.ActionLink("Order Management", "Index", "OrderManagement")</li>
+                    <li>@Html.ActionLink("Client", "Index", "Client")</li>
+                    <li>@Html.ActionLink("Product", "Index", "Product")</li>
+                    <li>@Html.ActionLink("Report", "Index", "Report")</li>
+                    <li>@Html.ActionLink("Notice", "Index", "Notice")</li>
+                </ul> <!--End .nav-->
+            </nav><!--End .topnav-->
+        </header> <!--End .head-->
+
+        <div class="content">
+
+            @RenderBody()
+        </div> <!--End .content-->
+        <footer class="footer">
+            <div class="copyright">
+                <span>IC Design Lab, Inc.</span>
+            </div> <!--End .copyright-->
+
+            <div class="contact_info">
+                <span>Contact: 03-6303-0732 | <a href="mailto:Is-customer@ic-design-lab.co.jp">Is-customer@ic-design-lab.co.jp</a></span>
+            </div> <!--End .contact_info-->
+        </footer> <!--End footer-->
+    </div> <!--End #wrapper-->
+</body>
+</html>

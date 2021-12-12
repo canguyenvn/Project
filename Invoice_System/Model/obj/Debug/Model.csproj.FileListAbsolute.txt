@@ -1,0 +1,2 @@
+D:\Project\Invoice_System\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Project\Invoice_System\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
